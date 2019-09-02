@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
 <title></title>
 </head>
 <style type="text/css">
@@ -52,8 +52,6 @@
 </body>
 <script type="text/javascript">
 	window.onload = function() {
-
-
 		var can = document.createElement("canvas");
 		document.body.appendChild(can);
 		var ctx = can.getContext('2d');
@@ -362,8 +360,8 @@
 			// ctx.fillStyle = "#fff";
 			ctx.fillStyle = "#ff0000";
 			ctx.font = "160px 楷体";
-			ctx.fillText("王茜", can.width * 0.5 - ctx.measureText("王茜").width * 0.5, can.height * 0.5 - 300);
-			ctx.fillText(text, can.width * 0.5 - ctx.measureText(text).width * 0.5, can.height * 0.5 + 0);
+			ctx.fillText("王茜", can.width * 0.5 - ctx.measureText("王茜").width * 0.5, can.height * 0.5 - 120);
+			ctx.fillText(text, can.width * 0.5 - ctx.measureText(text).width * 0.5, can.height * 0.5 + 200);
 			var data = ctx.getImageData(0, 0, can.width, can.height).data;
 			cfill();
 			for(i = 0; i < data.length; i += 12) {
