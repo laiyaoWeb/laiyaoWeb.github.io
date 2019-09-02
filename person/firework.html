@@ -359,8 +359,8 @@
 			// ctx.fillStyle = "#fff";
 			ctx.fillStyle = "#ff0000";
 			ctx.font = "160px 楷体";
-			ctx.fillText("王茜", can.width * 0.5 - ctx.measureText("王茜").width * 0.5, can.height * 0.5 - 500);
-			ctx.fillText(text, can.width * 0.5 - ctx.measureText(text).width * 0.5, can.height * 0.5 - 100);
+			ctx.fillText("王茜", can.width * 0.5 - ctx.measureText("王茜").width * 0.5, can.height * 0.5 -120);
+			ctx.fillText(text, can.width * 0.5 - ctx.measureText(text).width * 0.5, can.height * 0.5 + 200);
 			var data = ctx.getImageData(0, 0, can.width, can.height).data;
 			cfill();
 			for(i = 0; i < data.length; i += 12) {
