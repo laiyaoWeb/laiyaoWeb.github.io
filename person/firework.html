@@ -45,7 +45,7 @@
 			background: #222
 		}
 	</style>
-<script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <body>
 <div class="control" style="position:absolute">
 </div>
@@ -359,8 +359,8 @@
 			// ctx.fillStyle = "#fff";
 			ctx.fillStyle = "#ff0000";
 			ctx.font = "160px 楷体";
-			ctx.fillText("王茜", can.width * 0.5 - ctx.measureText("王茜").width * 0.5, can.height * 0.5 -120);
-			ctx.fillText(text, can.width * 0.5 - ctx.measureText(text).width * 0.5, can.height * 0.5 + 200);
+			ctx.fillText("王茜", can.width * 0.5 - ctx.measureText("王茜").width * 0.5, can.height * 0.5 - 200);
+			ctx.fillText(text, can.width * 0.5 - ctx.measureText(text).width * 0.5, can.height * 0.5 + 100);
 			var data = ctx.getImageData(0, 0, can.width, can.height).data;
 			cfill();
 			for(i = 0; i < data.length; i += 12) {
